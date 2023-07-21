@@ -18,13 +18,13 @@ const PostsDetails = () => {
   const {id} = useParams();
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(setLoadingDet());
+    dispatch(setLoadingDet(true));
     fetch(`http://localhost:5000/posts/${id}` )
       .then((res) => res.json())
       .then((data) => dispatch(setPostsDet(data)))
       .catch((error) => setErrorDet(error))
       .finally(() => {
-        dispatch(setLoadingDet());
+        dispatch(setLoadingDet(false));
         
       });
   }, []);
