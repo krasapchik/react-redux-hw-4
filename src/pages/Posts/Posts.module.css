@@ -1,0 +1,43 @@
+.box {
+    background-color: rgb(126, 143, 143);
+    width: 80%;
+    margin-left: 130px;
+    height: 600px;
+    overflow-y: scroll;
+    padding: 15px;
+    margin: 100px auto;
+  }
+  .post {
+     position: relative; 
+    padding: 10px;
+    margin: 30px auto;
+    border: 2px solid teal;
+    width: 80%;
+  margin-top: 20px;
+  
+  }
+  .con{
+      display: flex;
+  }
+  .body{
+      position: relative;
+      width: 170px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+     
+  }
+  
+  .div{
+      position: relative;
+     top: 40px;
+      display: flex;
+      justify-content: end; 
+  
+     
+  }
+  b{
+      font-size: 23px;
+  }
+  
+  
